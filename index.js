@@ -15,7 +15,6 @@ mongoose.connect(uri,
 .then(()=>console.log('Base de datos ok'))
 .catch(e=>console.log(e))
 
-
 app.use(express.json())
 
 app.get('/', (request, response)=> {
