@@ -1,6 +1,6 @@
 const express = require('express')
-
 const app = express()
+const PORT = 3001
 
 app.use(express.json())
 
@@ -12,8 +12,6 @@ app.post('/agregar', (request, response) => {
     console.log(request.body)
     response.send('success')
 })
-
-const PORT = 3001
 
 app.listen(PORT, ()=>{
     console.log(`app is running on port ${PORT}`)
